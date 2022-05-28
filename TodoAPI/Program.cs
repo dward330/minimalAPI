@@ -7,8 +7,15 @@ builder.Services.AddDbContext<TodoDB>(opt => opt.UseInMemoryDatabase("TodoList")
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddApiVersioning();
 
 var app = builder.Build();
+
+// define a 'version set' that applies to an API group
+var versionSet = app.NewApiVersionSet()
+                    .HasApiVersion(APIVersion.V1)
+                    .ReportApiVersions()
+                    .Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -21,7 +28,7 @@ app.MapGet("/", () =>
     return "Hello World!";
 });
 
-app.AddTodoEndpoints();
+app.AddTodoEndpoints(versionSet);
 
 app.Run();
 
