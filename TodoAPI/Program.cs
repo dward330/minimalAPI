@@ -25,7 +25,7 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/", () =>
 {
-    return "Hello World!";
+    return "Welcome to Derrick's Minimal API POC!";
 });
 
 app.AddTodoEndpoints(versionSet);
