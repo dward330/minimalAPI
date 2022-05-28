@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{DE591881-7993-44C3-B86C-2EF0A47DF86B}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TodoAPI PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TodoAPI" expanded="True" selected="True">
+            <Node name="TodoAPI" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
